@@ -1,0 +1,183 @@
+cout<< - used for output 
+Boiler Plate Code- 
+#include <iostream>
+using namespace std;
+int main(){
+}
+
+Comments- //This is a comment
+Multi-Line Comment- /* This is a multiline comment */
+
+Variables- 
+int 
+double 
+char 
+string 
+bool 
+
+declaration- 
+int mynum
+
+double
+
+Input- cin>> a;
+
+cout<<"Type a number:"
+cin>>x
+
+variable and datatypes are different! 
+variables- int, double, char, string, bool
+Datatypes- 
+int, float, double, char 
+1 byte= 8 bits
+
+bool/ boolean- 1 byte 
+char - 1 byte 
+int - 2 bytes/ 4 bytes
+float - 4 bytes
+double - 8 bytes
+
+float can also store scientific numbers such as a,b,c,d,e,f 
+
+boolean type is just true or false
+
+char can directly have characters or can have ascii values also 
+
+Operators in C++- 
+1.Arithematic operators- 
++ (Addition), - (Subtraction), * (Miltiplication), / (Division), % (Modulus / remainder), ++ (increment) , -- (decrement) 
+
+2.Assignment Operators- 
+= , += , -= , != , *= , /= , %= , &= ,
+
+3. Comparison Operators- 
+== , != , > , < , >= , <= 
+
+4. Logical Operators- 
+&& (AND) , || (OR) , ! (NOT)
+
+
+STRINGS- 
+ //include the string library 
+#include <string> 
+greeting= "Hello World"
+
+Concatenation- 
+adding of 2 or more strings like 
+string_1="Hello"
+string_2 = "World"
+cout<< string_1 + string_2
+
+>> Hello World 
+
+C++ uses + both for addition operation and concatenation operation 
+
+String Length- 
+string_1.length()
+or 
+string_1.size()
+
+accessing string characters is just like accesing array elements- 
+string_1[0]
+
+to add " " to strings we use \" \" 
+
+namespace std is a standard library is C++
+
+max(x,y) to give which is the maximum and minimum number among x and y
+
+min(x,y)
+
+<cmaths> header- 
+sqrt(64);
+round(2.6);
+log(2);
+
+
+CONDITIONAL LOOPS IN C++
+if 
+if else
+else
+switch
+
+Short-Hand if else- 
+
+string_result= (time<18) ? "Good Day" : "Good evening" 
+
+(condition) ? if condition : else; 
+
+switch statements- 
+
+switch ch{
+case x: 
+//code x
+break;
+case y:
+//code y
+break;
+case z:
+//code z
+break;
+default:
+cout<<"wrong input";
+}
+
+
+WHILE LOOPS - 
+while(){
+}
+
+FOR LOOPS- 
+for(initialization ; condition ; increment){}
+
+if we want to do , for i in string 
+
+for(int i: myNumbers){
+}
+
+ARRAYS IN C++
+
+int arr[5]= {1,2,3,4,5}
+
+to loop through arrays- 
+for(int i=0;i< sizeof(arr);i++){
+cout<<arr[i]}
+
+ or we could also do 
+
+for(int i: arr){
+cout<<i
+}
+
+sizeof(arr) returns size in bytes !!!
+
+to get the size of array we would have to divide sizeof(arr) by sizeof(int) 
+
+len_arr= sizeof(arr)/sizeof(int)
+
+2D arrays- 
+
+string letters[2][4] = {{'A','B','C','D'},{'E','F','G','H'}}
+
+we generally use 2D arrays to implement relational database structure 
+
+STRUCTURES IN C++ - 
+
+struct{                   // declaration of a structure 
+   int myNum=12;          // member (int variable) 
+   string myString= "Hi";  // member (string variable) 
+   } myStructure;          //structure Variable 
+
+
+to access structure members: 
+
+using (.)dot we access structure members. 
+
+myStructure.myNum = 1;
+myStructure.myString= "Hola";
+
+naming a structure: 
+struct myDataType{
+       int myNum;
+       string myString;
+};
